@@ -1,0 +1,16 @@
+{
+  "usertestinpassword": [
+    {
+      "id": 1,
+      "name": "dent",
+      "password": "qwe12345",
+      "student": 202236
+    },
+    {
+      "name": "user",
+      "password": "qwe12345",
+      "student": "200036",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/注册.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+      <div class="form-wrapper">
+        <h2>注册</h2>
+          <div class="form-group">
+            <label for="username">用户名</label>
+            <input type="text" id="username" name="username" placeholder="请输入用户名" required>
+            <div class="error-message" id="username-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="student-id">学号</label>
+            <input type="text" id="student-id" name="student-id" placeholder="请输入学号" required>
+            <div class="error-message" id="student-id-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" id="password" name="password" placeholder="请输入密码" required>
+            <div class="error-message" id ="password-error"></div>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="注册" id="togo">
+          <a href="登录.html">请有账号，直接登陆</span>
+        </div>
+    </div>
+  </div>
+  <div id="loading" style="display: none;">
+    <div class="spinner"></div>
+    <div>请稍等,马上为您返回</div>
+  </div>
+</body>
+<script src="注册.js"></script>
+</html>

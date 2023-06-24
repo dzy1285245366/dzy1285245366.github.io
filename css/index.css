@@ -1,0 +1,412 @@
+
+body {
+    background-color: #f5f5f5;
+  }
+
+  .navbar {
+    background-color: #4CAF50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .search-input {
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+    outline:none;
+  }
+
+  .search-button {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    background-color: #e1e1e1;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .search-results li {
+    padding: 10px;
+    background-color: lightblue;
+    border-bottom: 1px solid #2ecc71;
+    cursor: pointer;
+  }
+
+  .search-results li:hover {
+    background-color: #36dc7e;
+  }
+
+  .user-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-link {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  /* 音乐展示区样式 */
+  .music-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .music-table th,
+  .music-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .music-table tr:hover {
+    background-color: #2ecc71;
+    cursor: pointer;
+  }
+
+  .music-progress {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    margin-top: 5px;
+  }
+
+  .music-progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+  }
+
+  .music-search {
+    margin-top: 20px;
+    background-color: #4CAF50;
+  }
+
+  .music-search-input {
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+    outline:none;
+  }
+
+  .music-search-button {
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+  }
+
+  .music-search-results {
+    background-color: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+  }
+  .music-search-results li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .music-search-results li:hover {
+    background-color: #f2f2f2;
+  }
+
+  
+  .dzylxlb {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    float:right;
+    width:200px;
+    height:36px;
+    
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:-50px;
+  }
+
+  
+  .dropdown-content.show {
+    display: flex;
+    flex-wrap: wrap; /* 允许选项换行 */
+  }
+  
+  .dropdown-content li {
+    flex-basis: 100%; /* 每行只显示一个选项 */
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .dropdown-content li a:hover {
+    color:#2ecc71;
+  }
+
+  /* 音乐展示区样式 */
+
+
+
+
+  /* //视频区 */
+  .video-section {
+    background-color: #2ecc71;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .video-search {
+    margin-bottom: 20px;
+  }
+  
+  .video-search-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .video-search-button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .video-search-button:hover {
+    background-color: #219653;
+  }
+  
+  .video-search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .video-search-results li {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-info {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .video-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .video-description {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .video-duration {
+    font-size: 12px;
+    color: #888;
+  }
+  .video-search-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+    display:none;
+  }
+  
+  .video-search-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size:18px;
+  }  
+
+  .video-search-list li:hover {
+    background-color: lightsalmon;
+  }
+
+  .video-search-list-span {
+    display:block;
+    margin-left:20px;
+    color:red;
+  }
+
+    /* //视频区 */
+
+    /* 文件区 */
+    .file-section {
+      background-color: #85c47c;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    
+    .file-search {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .file-search-input {
+      flex: 1;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    
+    .file-search-button {
+      background-color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+    
+    .file-search-results {
+      margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.978);
+    }
+    
+    .file-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .file-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .file-thumbnail {
+      width: 80px;
+      height: 80px;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+    
+    .file-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .file-info {
+      margin-left: 10px;
+      flex: 1;
+    }
+    
+    .file-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    
+    .file-description {
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    
+    .file-upload-time {
+      font-size: 12px;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+    
+    .file-download-button {
+      background-color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #000;
+    }
+    .file-results-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+     
+    }
+    
+    .file-results-list li {
+      background-color: #9e38a8;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+    
+    /*  文件区*/

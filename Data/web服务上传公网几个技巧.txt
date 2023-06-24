@@ -1,0 +1,58 @@
+-------------------------通过git部署----------------------------------
+
+1.注册github账号，官网：https://github.com/
+
+2.下载git(面条工具)官网：https://git-scm.com/downloads
+
+3.登录github账号，点击创建仓库
+
+4.仓库名字：我们的github名字.github.io
+
+5.选择public(公共的)，添加一个md文件（添加自述文件），点击创建
+
+6.打开web项目文件所在目录，右键选择Git Bash Here打开，（反正选择Git打开就行）
+
+7.输入：git clone 我们的github仓库地址，然后回车
+
+8.把我们的项目放到从git下载下来的文件夹里面，（一般在哪里使用git就在哪里），一定要让项目的首页叫index
+
+9.在git命令行中cd到我们从github下载的文件夹中
+
+10.在命令行中输入：git add .
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+{
+	Git默认会记录文件的所有权信息，但某些文件系统（如FAT32、exFAT等）不支持记录所有权。当您在这样的文件系统上使用Git时，可能会出现这样的错误。
+fatal: detected dubious ownership in repository at 'E:/web/student/windStudent/m
+yweb.github.io'
+'E:/web/student/windStudent/myweb.github.io' is on a file system that does not r
+ecord ownership
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory E:/web/student/windStudent/mywe
+b.github.io
+
+为了解决此问题，您可以按照错误消息中提供的指令，将指定的目录添加到Git的安全目录列表中。这样可以告诉Git在处理这个目录时不检查文件所有权。
+
+执行代码：git config --global --add safe.directory E:/web/student/windStudent/myweb.github.io
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+}
+
+11.继续输入：git commit -m '你的版本留言'，回车
+
+<!--如果是第一次在电脑中操作-->
+
+11.1：在命令行中输入：git config --global user.email '注册github账号的邮箱'
+
+11.2：在命令行中输入：git config --global user.name '我们github的用户名'
+
+11.3：继续输入：git commit -m '你的版本留言'，回车
+
+<!--如果是第一次在电脑中操作-->
+
+12：在命令行中输入：git push，（当回车后会弹出一个窗口登录，点击它并在它跳转的那个页面点击授权）
+
+成功
+
+
+
+-------------------------通过git部署----------------------------------

@@ -1,0 +1,104 @@
+body {
+    background-color: #c7e1c5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #408040;
+    text-align: center;
+}
+
+.video-wrapper {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.video-wrapper img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.video-description {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.video-info {
+    margin-bottom: 20px;
+}
+
+.video-info div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.video-info div span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.video-list {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.playbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.playbox {
+    width: 48%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.playbox-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.playbox .info {
+    flex-grow: 1;
+}
+
+.playbox .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.playbox .status {
+    font-style: italic;
+    color: #f00;
+}
+
+@media (max-width: 768px) {
+
+    /* 在小屏幕设备上调整样式 */
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .playbox {
+        width: 100%;
+    }
+}

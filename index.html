@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>list丁丁丁</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="icon/shcool.ico">
+
+  <script src="js/JSONP/index.js"></script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="搜索">
+      <button class="search-button">搜索</button>
+      <ul class="search-results">
+        <!-- <li>结婚后</li>
+        <li>结婚后</li>
+        
+        <li>结婚后</li>
+        <li>结婚后</li> -->
+      </ul>
+    </div>
+    <div class="user-container">
+      <a href="user/登录.html" class="user-link" target="_blank">登录</a>
+      <a href="user/注册.html" class="user-link" target="_blank">注册</a>
+      <img src="" alt="头像" class="avatar">
+    </div>
+  </div>
+  <script src="js/index.js">
+    // 请求百度搜索接口
+  </script>
+
+
+  <!-- //音乐区 -->
+  <table class="music-table">
+    <div class="music-search">
+      <input type="text" class="music-search-input" placeholder="搜索音乐">
+      <button class="music-search-button">搜索</button>
+
+      <!-- 下拉列表 -->
+      <div class="dzylxlb">
+        <div class="dropdown">
+          <button onclick="toggleDropdown()" id="dzylban">科技音乐网站</button>
+          <ul class="dropdown-content" id="myDropdown">
+            <!-- <li><a href="#">选项1</a></li>
+            <li><a href="#">选项2</a></li>
+            <li><a href="#">选项3</a></li>
+            <li><a href="#">选项4</a></li>
+            <li><a href="#">选项5</a></li>
+            <li><a href="#">选项6</a></li> -->
+          </ul>
+        </div>
+      </div>
+      </div>
+
+      <div class="music-search-results">
+        <!-- 音乐搜索展示列表 -->
+        <ul>
+          <li>搜索结果1</li>
+          <li>搜索结果2</li>
+          <!-- 其他搜索结果 -->
+        </ul>
+      </div>
+
+    </div>
+
+
+    <thead id="music_tbody">
+      <tr>
+        <th>音乐名称</th>
+        <th>音乐歌手</th>
+        <th>音乐时长</th>
+        <th>音乐进度条</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr>
+        <td>歌曲1</td>
+        <td>歌手1</td>
+        <td>3:30</td>
+        <td>
+          <div class="music-progress">
+            <div class="music-progress-bar" style="width: 50%;"></div>
+          </div>
+        </td>
+      </tr> -->
+
+      <!-- 其他音乐行 -->
+    </tbody>
+  </table>
+  <!-- //音乐区 -->
+  <!-- //引入大米API，当页面每次加载进来时都获取一次随机音乐 -->
+  <script src="js/musicAPI/大米API.js"></script>
+
+
+  <!-- 视频区 -->
+  <div class="video-section">
+    <div class="video-search">
+      <input type="text" class="video-search-input" placeholder="搜索视频">
+      <button class="video-search-button">搜索</button>
+      <ul class="video-search-list">
+        <!-- 如果需要展示主演名字请在li里面单独添加一个<span class="video-search-list-span">主演：***</span> -->
+        <!-- <li>哈哈哈<span class="video-search-list-span">主演：student</span></li>
+      <li>哈哈哈</li>
+      <li>哈哈哈</li> -->
+      </ul>
+
+      <ul class="video-search-results">
+        <!-- 视频搜索展示列表 -->
+        <!-- <li>
+        <div class="video-info">
+          <h3 class="video-title">视频标题</h3>
+          <p class="video-description">视频简介</p>
+          <span class="video-duration">视频时长</span>
+        </div>
+        <div class="video-thumbnail">
+          <img src="image/风景/iso-republic-africa-elephant-1100x734.jpg" alt="视频封面">
+        </div>
+      </li> -->
+        <!-- 其他搜索结果 -->
+
+      </ul>
+    </div>
+  </div>
+  <!-- 视频区 -->
+
+
+  <!-- //文件区 -->
+  <div class="file-section">
+    <h2 class="section-title">文件区</h2>
+    <div class="file-search">
+      <input type="text" class="file-search-input" placeholder="搜索文件">
+      <button class="file-search-button">搜索</button>
+    </div>
+    <div class="file-search-results">
+      <ul class="file-results-list">
+        <!-- <li>哈哈哈哈</li>
+      <li>哈哈哈哈</li>
+      <li>哈哈哈哈</li>
+      <li>哈哈哈哈</li> -->
+      </ul>
+    </div>
+    <div class="file-list">
+      <ul>
+        <!-- <li>
+        <div class="file-thumbnail">
+          <img src="image/风景/picography-trees-looking-up-sky.jpg" alt="文件封面">
+        </div>
+        <div class="file-info">
+          <h3 class="file-title">文件标题</h3>
+          <p class="file-description">文件描述</p>
+          <p class="file-upload-time">上传时间：2023-06-23</p>
+        </div>
+        <button class="file-download-button">下载</button>
+      </li> -->
+        <!-- 其他文件项 -->
+      </ul>
+    </div>
+  </div>
+  <!-- 文件区 -->
+</body>
+<script src="js/user.js"></script>
+<script src="js/indexLeiUi.js"></script>
+
+</html>
